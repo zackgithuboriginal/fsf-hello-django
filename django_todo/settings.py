@@ -31,11 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = development
 
 if development:
-    print(development)
     ALLOWED_HOSTS = ['localhost']
 else:
-    print('HELLO')
-    ALLOWED_HOSTS = ['https://zackg-django-todo-app.herokuapp.com/']
+    ALLOWED_HOSTS = ['zackg-django-todo-app.herokuapp.com/']
 
 
 # Application definition
